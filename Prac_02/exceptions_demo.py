@@ -12,5 +12,5 @@ print("Finished.")
 """
 1. ValueError will occur if you enter a letter
 2. ZeroDivisionError will occur if you divide by zero
-
+3. If denominator = 0, make fraction = 0
 """
