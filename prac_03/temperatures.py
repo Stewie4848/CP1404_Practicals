@@ -2,12 +2,12 @@ def main():
     temperature = get_temperature()
     fahrenheit = convert_celsius_to_fahrenheit(temperature)
     celsius = convert_fahrenheit_to_celsius(temperature)
-    print("Temperature: {} fahrenheit".format(fahrenheit))
+    print("Temperature: {:.2f} fahrenheit".format(fahrenheit))
     print("Temperature: {:.2f} celsius".format(celsius))
 
 
 def get_temperature():
-    temperature = int(input("Enter temperature"))
+    temperature = int(input("Enter temperature: "))
     return temperature
 
 
