@@ -17,3 +17,6 @@ def print_asterisk(password):
 def get_password():
     password = input("Password: ")
     return password
+
+
+main()
