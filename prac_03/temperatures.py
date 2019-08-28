@@ -1,14 +1,24 @@
+MENU = """C - Convert Celsius to Fahrenheit
+F - Convert Fahrenheit to Celsius
+Q - Quit"""
+
+
 def main():
-    temperature = get_temperature()
-    fahrenheit = convert_celsius_to_fahrenheit(temperature)
-    celsius = convert_fahrenheit_to_celsius(temperature)
-    print("Temperature: {:.2f} fahrenheit".format(fahrenheit))
-    print("Temperature: {:.2f} celsius".format(celsius))
-
-
-def get_temperature():
-    temperature = int(input("Enter temperature: "))
-    return temperature
+    print(MENU)
+    choice = input(">").upper()
+    while choice is not "Q":
+        if choice == "C":
+            celsius = int(input("Temperature: "))
+            fahrenheit = convert_celsius_to_fahrenheit(celsius)
+            print("Result: {:.2f} F".format(fahrenheit))
+        if choice == "F":
+            fahrenheit = int(input("Temperature: "))
+            celsius = convert_fahrenheit_to_celsius(fahrenheit)
+            print("Result: {:.2f} C".format(celsius))
+        else:
+            print("Invalid choice")
+        print(MENU)
+        choice = input(">").upper()
 
 
 def convert_celsius_to_fahrenheit(celsius):
