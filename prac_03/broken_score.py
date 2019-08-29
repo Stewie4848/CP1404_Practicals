@@ -10,15 +10,13 @@ def get_score():
 
 def determine_score(score):
     if score < 0 or score > 100:
-        return "Invalid score"
-    elif score >= 85:
-        return "A"
-    elif score >= 70:
-        return "B"
+        print("Invalid score")
+    elif score >= 90:
+        print("Excellent")
     elif score >= 50:
-        return "C"
+        print("Passable")
     else:
-        return "Fail"
+        print("Bad")
 
 
 main()
