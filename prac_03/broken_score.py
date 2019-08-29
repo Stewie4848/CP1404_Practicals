@@ -1,6 +1,6 @@
 def main():
     score = get_score()
-    print(score)
+    print(determine_score(score))
 
 
 def get_score():
