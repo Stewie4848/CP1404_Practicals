@@ -1,12 +1,13 @@
 def main():
     password_length = 5
     valid_password = False
+    password = get_password()
     while valid_password is False:
-        password = get_password()
         if len(password) >= password_length:
             valid_password = True
         else:
             print("Invalid password")
+            password = get_password()
     print_asterisk(password)
 
 
