@@ -1,6 +1,6 @@
 def main():
     score = get_score()
-    print(determine_score(score))
+    print(determine_grade(score))
 
 
 def get_score():
@@ -8,7 +8,7 @@ def get_score():
     return score
 
 
-def determine_score(score):
+def determine_grade(score):
     if score < 0 or score > 100:
         print("Invalid score")
     elif score >= 90:
