@@ -16,7 +16,7 @@ def main():
     if username in usernames:
         print("Access granted")
     else:
-        print("Acess Denied")
+        print("Access Denied")
 
 
 main()
