@@ -7,7 +7,7 @@ def main():
     print("The last number is {}".format(numbers[-1]))
     print("The smallest number is {}".format(min(numbers)))
     print("The largest number is {}".format(max(numbers)))
-    print("The average number is {}".format(sum()))
+    print("The average number is {}".format(sum(numbers)))
 
 
 main()
