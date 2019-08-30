@@ -9,5 +9,14 @@ def main():
     print("The largest number is {}".format(max(numbers)))
     print("The average number is {}".format(sum(numbers)))
 
+    usernames = ['jimbo', 'giltson98', 'derekf', 'WhatSup', 'NicolEye', 'swei45', 'BaseInterpreterInterface',
+                 'BaseStdIn', 'Command', 'ExecState', 'InteractiveConsole', 'InterpreterInterface', 'StartServer',
+                 'bob']
+    username = input("Username: ")
+    if username in usernames:
+        print("Access granted")
+    else:
+        print("Acess Denied")
+
 
 main()
