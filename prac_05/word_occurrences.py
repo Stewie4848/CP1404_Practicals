@@ -10,5 +10,5 @@ for word in words:
 
 max_length = max((len(word) for word in words))
 
-for word in word_count:
+for word in sorted(list(word_count.keys())):
     print("{:{}} = {}".format(word, max_length, word_count[word]))
