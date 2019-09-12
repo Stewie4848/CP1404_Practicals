@@ -10,9 +10,9 @@ def main():
     while number_of_quick_picks < 0:
         print("Invalid number of quick picks")
         number_of_quick_picks = int(input("Number of quick picks: "))
-    for pick in range(number_of_quick_picks):
+    for i in range(number_of_quick_picks):
         quick_pick = []
-        for n in range(NUMBERS_PER_LINE):
+        for j in range(NUMBERS_PER_LINE):
             number = random.randint(MINIMUM, MAXIMUM)
             while number in quick_pick:
                 number = random.randint(MINIMUM, MAXIMUM)
