@@ -5,9 +5,9 @@ class ProgrammingLanguage:
         self.reflection = reflection
         self.year = year
 
+    def __str__(self):
+        return "{}, {} typing, Reflection={}, first appeared in {}".format(self.name, self.typing, self.reflection,
+                                                                           self.year)
+
     def is_dynamic(self):
-        self.typing.lower()
-        if self.typing == "dynamic":
-            return True
-        else:
-            return False
+        return self.typing.lower() == "dynamic"
