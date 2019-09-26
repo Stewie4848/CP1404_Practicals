@@ -17,9 +17,9 @@ def main():
 
     limo = Car("Geoff", 100)
     limo.add_fuel(20)
-    print("Limo: ", limo.fuel)
+    print(limo.name, limo.fuel)
     limo.drive(115)
-    print("Limo odometer: ", limo.odometer)
+    print(limo.name, "odometer: ", limo.odometer)
     print(limo)
 
 
