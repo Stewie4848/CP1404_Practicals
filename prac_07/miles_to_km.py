@@ -10,7 +10,7 @@ class DistanceConverter(App):
     message = StringProperty()
 
     def build(self):
-        Window.size = 400, 400
+        Window.size = 500, 250
         self.title = "Convert Miles to Kilometres"
         self.root = Builder.load_file("miles_to_km.kv")
         return self.root
